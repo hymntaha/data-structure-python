@@ -183,7 +183,7 @@ class BinaryTree(object):
     def size_recursive(self, node):
         if node is None:
             return 0
-        return 1+self.size_recursive(node.left) + self.size_(node.right)
+        return 1+self.size_recursive(node.left) + self.size_recursive(node.right)
 
 
 tree = BinaryTree(1)
