@@ -153,6 +153,14 @@ class BinaryTree(object):
 
         return traversal
 
+    def height(self, node):
+        if node is None:
+            return -1
+
+        left_height = self.height(node.left)
+        right_height = self.height(node.right)
+
+        return 1 + max(left_height, right_height)
 
 
 
@@ -163,4 +171,5 @@ tree.root.right = Node(3)
 tree.root.left.left = Node(4)
 tree.root.left.right = Node(5)
 
-print(tree.print_tree("reverse_levelorder"))
+# print(tree.print_tree("reverse_levelorder"))
+print(tree.height(tree.root))
