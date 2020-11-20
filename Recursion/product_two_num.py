@@ -7,4 +7,4 @@ def recursive_multiply(x, y):
         return 0
     return x + recursive_multiply(x, y-1)
 
-print(recursive_multiply(34,0))
+print(recursive_multiply(1200, 2000))
