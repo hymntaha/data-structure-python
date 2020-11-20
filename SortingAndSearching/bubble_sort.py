@@ -12,3 +12,7 @@ def bubble_sort(lst):
 lst = [3, 2, 1, 5, 4]
 bubble_sort(lst)
 print(lst)
+
+"""
+Time complexity is O(N^2)
+"""
