@@ -1,6 +1,6 @@
 def binary_search(arr, left, right, key):
     while left <= right:
-        mid = left + (right - left) // 2
+        mid = left + right // 2
 
         # Check if key is present at mid
         if arr[mid] == key:
