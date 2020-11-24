@@ -40,9 +40,11 @@ def search(nums, target):
 # Driver to test above code
 if __name__ == '__main__':
 
-    lst = [6, 7, 8, 9, 10, 0, 1, 2, 3]
-    key = 0
+    lst = [7, 8, 9, 0, 3, 5, 6]
+    key = 3
 
     print("Index of the element is : ",
           search(lst, key))
 
+
+### Time complexity of the algo is generally O(log(n))
