@@ -33,3 +33,5 @@ def find_max_prod(lst):
 
 lst = [1, 3, 5, 2, 6]
 print(find_max_prod(lst))
+
+# We have traversed the list in a single loop. So, the time complexity is O(n)
