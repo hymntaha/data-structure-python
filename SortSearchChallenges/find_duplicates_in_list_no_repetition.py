@@ -18,3 +18,9 @@ def find_duplicates(lst):
 lst = [1, 3, 1, 3, 5, 1, 4, 7, 7]
 print(find_duplicates(lst))
 # result = [1, 3, 7]
+
+
+# Since the list is traversed only once and removing duplication also takes O(N) time, overall time complexity
+# of this solution is O(N).
+
+# TODO: Space complexity analysis
