@@ -29,7 +29,11 @@ def find_max_prod(lst):
         return min2, min1
 
 
-lst = [1, 3, 5, 2, 6]
+# lst = [1, 3, 5, 2, 6]
+# num1, num2 = find_max_prod(lst)
+# print(num1, num2)
+
+lst = [1, -3, -5, 2, 6]
 num1, num2 = find_max_prod(lst)
 print(num1, num2)
 
