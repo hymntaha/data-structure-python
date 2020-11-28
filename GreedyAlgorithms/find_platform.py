@@ -35,3 +35,5 @@ arrival= [900, 940, 950, 1100, 1500, 1800]
 departure = [910, 1200, 1120, 1130, 1900, 2000]
 print(find_platform(arrival,departure))
 # result = 3
+# The time complexity will now be O(nlogn), because we used sorted lists and greedily kept track of the train
+# that have arrived but havent left yet.
