@@ -12,3 +12,5 @@ def find_min_coins(v, coins_available):
 v = 19
 available_coins = [1, 5, 10, 25]
 print(find_min_coins(v, available_coins))
+
+# Since there is a nested loop, the while loop inside a for loop, the time complexity is O(N^2)
