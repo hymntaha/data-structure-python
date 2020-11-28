@@ -25,3 +25,6 @@ def egyptian_fraction(numerator, denominator):
 numerator = 2
 denominator = 3
 print(egyptian_fraction(numerator, denominator))
+
+# Time complexity is O(logn) because a fraction is always reduced to a form where the denominator is greater than the numerator
+# and the numerator doesnt divide the denominator
