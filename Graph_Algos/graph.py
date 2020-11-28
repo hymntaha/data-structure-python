@@ -87,7 +87,26 @@ def number_of_nodes(my_graph, level):
             result += 1
     return result
 
+def transpose(my_graph):
+    new_graph = Graph(my_graph.V)
+    for source in range(my_graph.V):
+        while my_graph.graph[source] is not None:
+            destination = my_graph.graph[source].vertex
+            # Now the source is destination and vice versa
+            new_graph.add_edge(destination, source)
+            my_graph.graph[source] = my_graph.graph[source].next
 
+    return new_graph
+
+
+# V = 5
+# g = Graph(V)
+# g.add_edge(0, 1)
+# g.add_edge(0, 2)
+# g.add_edge(1, 3)
+# g.add_edge(1, 4)
+#
+# print(number_of_nodes(g, 2))
 V = 5
 g = Graph(V)
 g.add_edge(0, 1)
@@ -95,4 +114,5 @@ g.add_edge(0, 2)
 g.add_edge(1, 3)
 g.add_edge(1, 4)
 
-print(number_of_nodes(g, 2))
+new_g = transpose(g)
+new_g.print_graph()
