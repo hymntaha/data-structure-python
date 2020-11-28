@@ -1,0 +1,27 @@
+import math
+
+
+def egyptian_fraction(numerator, denominator):
+    # A list to store denominator
+    lst_denominator = []
+
+    # while loop runs until fraction becomes 0
+    # numerator becomes 0
+
+    while numerator != 0:
+        # taking ceiling
+        x = math.ceil(denominator / numerator)
+
+        # storing value in lst_denominator list
+        lst_denominator.append(x)
+
+        # Updating new numerator and denominator
+        numerator = x * numerator - denominator
+        denominator = denominator * x
+
+    return lst_denominator
+
+
+numerator = 2
+denominator = 3
+print(egyptian_fraction(numerator, denominator))
