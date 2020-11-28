@@ -15,3 +15,5 @@ def min_cost(pipes):
 
 pipes = [4, 3, 2, 6]
 print(min_cost(pipes))
+
+# The time complexity for this solution is O(nlogn), because of the use of sort function.
