@@ -98,6 +98,44 @@ def transpose(my_graph):
 
     return new_graph
 
+import copy # For deep copy if needed
+def find_all_paths_recursive(graph, source, destination, visited, path, paths):
+    # Mark the current node as visited and store in path
+    visited[source] = True
+    path.append(source)
+
+    # If current vertex is same as destination, then print
+    # stores the current path in 2D list
+    if source == destination:
+        paths.append(copy.deepcopy(path))
+    else:
+        # If current vertex is not destination
+        # Recur for all the vertices adjacent to this vertex
+
+        while graph.graph[source] is not None:
+            i = graph.graph[source].vertex
+
+            if not visited[i]:
+                find_all_paths_recursive(graph, i, destination, visited, path, paths)
+            graph.graph[source] = graph.graph[source].next
+
+    # Remove current vertex from path[] and mark it as unvisited
+    path.pop()
+    visited[source] = False
+
+def find_all_paths(graph, source, destination):
+
+    # Mark all the vertices as not visited
+    visited = [False] * (graph.V)
+
+    # Create a list to store paths
+    paths = []
+    path = []
+
+    # Call the recursive helper function to find all paths
+    find_all_paths_recursive(graph, source, destination, visited, path, paths)
+    return paths
+
 
 # V = 5
 # g = Graph(V)
@@ -107,12 +145,27 @@ def transpose(my_graph):
 # g.add_edge(1, 4)
 #
 # print(number_of_nodes(g, 2))
-V = 5
-g = Graph(V)
+# V = 5
+# g = Graph(V)
+# g.add_edge(0, 1)
+# g.add_edge(0, 2)
+# g.add_edge(1, 3)
+# g.add_edge(1, 4)
+#
+# new_g = transpose(g)
+# new_g.print_graph()
+
+g = Graph(6)
 g.add_edge(0, 1)
 g.add_edge(0, 2)
 g.add_edge(1, 3)
 g.add_edge(1, 4)
+g.add_edge(3, 5)
+g.add_edge(4, 5)
+g.add_edge(2, 5)
 
-new_g = transpose(g)
-new_g.print_graph()
+source = 0
+destination = 5
+
+paths = find_all_paths(g, source, destination)
+print(paths)
