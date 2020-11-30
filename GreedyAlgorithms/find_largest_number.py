@@ -33,3 +33,5 @@ number_of_digits = 3
 
 print(find_largest_number(number_of_digits, sum_of_digits))
 # result = [9, 9, 2]
+
+# The time complexity is O(n) bc we can simply find the solution in one iteration
