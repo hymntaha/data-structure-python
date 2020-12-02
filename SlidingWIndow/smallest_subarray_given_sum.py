@@ -15,6 +15,5 @@ def smallest_subarray_with_given_sum(s, arr):
         return 0
     return min_length
 
-arr = [3, 4, 1, 1, 6]
-S=8
-print(smallest_subarray_with_given_sum(S, arr))
+
+print(smallest_subarray_with_given_sum(7, [2, 1, 5, 2, 3, 2]))
