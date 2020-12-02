@@ -14,3 +14,5 @@ def max_sub_array_of_size_k(k, arr):
 input = [2, 1, 5, 1, 3, 2]
 k=3
 print(max_sub_array_of_size_k(k, input))
+# time complexity is O(N)
+# space complexity is O(1) - constant
