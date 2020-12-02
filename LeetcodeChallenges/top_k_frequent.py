@@ -13,3 +13,5 @@ input = ["the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"]
 k = 4
 print(topKFrequent(input,k))
 
+
+# This is O(NlogN)
