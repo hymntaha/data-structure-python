@@ -17,3 +17,9 @@ def smallest_subarray_with_given_sum(s, arr):
 
 
 print(smallest_subarray_with_given_sum(7, [2, 1, 5, 2, 3, 2]))
+"""
+Time complexity of the algo will be O(N). The outer for loop runs for all elements, and the inner while loop
+processes each element only once, therefore, the time complexity of the algo will be O(N+N), which is equivalent to O(N)
+
+Space complexity O(1) constant
+"""
