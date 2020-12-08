@@ -24,13 +24,13 @@ def fib(num):
     if num == 0:
         return 0
 
-    second_last = 0 # The 0th
-    last = 1 # the first
-    current= 0
+    current = 0
+    second_last = 0
+    last = 1
 
     for i in range(2, num+1):
-        # current is the sum of the last plus second last number before the current one
-        current, second_last = second_last + last, last
+
+        current, second_last = second_last+last, last
         last = current
 
     return current
