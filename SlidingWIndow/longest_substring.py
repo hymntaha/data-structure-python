@@ -28,3 +28,6 @@ def length_of_longest_substring(str, k):
     return max_length
 
 print(length_of_longest_substring('aabccbb',2))
+
+# Time complexity will be O(N)
+# Space complexity is O(26) which is asymptotically equal to O(1)
