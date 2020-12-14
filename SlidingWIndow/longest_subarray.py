@@ -23,3 +23,8 @@ def length_of_longest_substring(arr,k):
 arr = [0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1]
 k = 2
 print(length_of_longest_substring(arr,k))
+
+"""
+Time complexity is O(N)
+Space complexity is O(1)
+"""
