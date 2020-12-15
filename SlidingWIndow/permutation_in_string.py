@@ -37,3 +37,6 @@ def find_permutation(str, pattern):
 string = "aaacb"
 pattern = "abc"
 print(find_permutation(string, pattern))
+
+# TIme complexity will be O(N+M), where N and M are the number of characters in the input string and the pattern, respectively
+# Space complexity is O(M) since in the worse case, the whole pattern can have distinct characters that will go into the hashmap
