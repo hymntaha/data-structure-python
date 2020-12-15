@@ -16,3 +16,6 @@ def pair_with_targetsum(arr, target_sum):
 arr = [1, 2, 3, 4, 6]
 target=6
 print(pair_with_targetsum(arr, target))
+
+# Time complexity is O(N)
+# Space complexity is O(1)
