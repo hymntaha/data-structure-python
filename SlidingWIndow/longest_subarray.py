@@ -1,5 +1,7 @@
 def length_of_longest_substring(arr,k):
-    window_start, max_length, max_ones_count = 0, 0, 0
+    window_start = 0
+    max_length = 0
+    max_ones_count = 0
 
     # Try to extend the range [window_start, window_end]
     for window_end in range(len(arr)):
