@@ -34,7 +34,7 @@ def find_permutation(str, pattern):
     return False
 
 
-string = "aaacb"
+string = "oidbcaf"
 pattern = "abc"
 print(find_permutation(string, pattern))
 
