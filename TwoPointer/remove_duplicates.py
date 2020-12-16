@@ -12,3 +12,6 @@ def remove_duplicates(arr):
 
 arr = [2, 3, 3, 3, 6, 9, 9]
 print(remove_duplicates(arr))
+
+# Time complexity is O(N)
+# Space complexity is O(1)
