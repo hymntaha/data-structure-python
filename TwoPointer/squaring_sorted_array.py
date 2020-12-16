@@ -17,3 +17,6 @@ def make_squares(arr):
 
 arr = [-2, -1, 0, 2, 3]
 print(make_squares(arr))
+
+# Time complexity is O(N)
+# Space complexity is O(N)
