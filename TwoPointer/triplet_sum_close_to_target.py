@@ -27,3 +27,8 @@ def triplet_sum_close_to_target(arr, target_sum):
 
 
 print(triplet_sum_close_to_target([-3, -1, 1, 2], 1))
+
+"""
+Sorting the array will take O(N * logN). Overall It will take O(N*logN + N ^ 2) which is asymptotically equivalent to O(N ^ 2)
+Space complexity: It is O(N) which is required for sorting
+"""
