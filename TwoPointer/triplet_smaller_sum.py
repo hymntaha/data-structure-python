@@ -18,3 +18,10 @@ def triplet_with_smaller_sum(arr, target):
     return count
 
 print(triplet_with_smaller_sum([-1, 4, 2, 1, 3], 5))
+
+
+"""
+Sorting array will take O(N * logN). Iterating twice will take O(N^2). 
+So time complexity will be O(N*logN + N ^ 2) which is asymptotically O(N ^ 2)
+Space complexity will take O(N)
+"""
