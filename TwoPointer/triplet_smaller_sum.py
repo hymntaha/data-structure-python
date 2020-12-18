@@ -6,11 +6,11 @@ def triplet_with_smaller_sum(arr, target):
         start = i + 1
         end = len(arr) - 1
 
-        while (start <  end):
+        while start < end:
             sum = arr[i] + arr[start] + arr[end]
 
-            if(sum<target):
-                count = count + end - start;
+            if sum < target:
+                count = count + end - start
                 start += 1
             else:
                 end -= 1
