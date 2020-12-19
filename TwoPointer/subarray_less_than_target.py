@@ -24,3 +24,8 @@ arr = [2, 5, 3, 10]
 target = 30
 
 print(find_subarrays(arr, target))
+
+"""
+Time complexity: O(N)
+Space complexity: O(N)
+"""
