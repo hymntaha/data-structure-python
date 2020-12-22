@@ -40,3 +40,8 @@ str1="xy#z"
 str2="xzz#"
 
 print(backspace_compare(str1, str2))
+
+"""
+Time complexity is O(M+N)
+Space complexity is O(1)
+"""
