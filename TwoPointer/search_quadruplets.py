@@ -36,3 +36,9 @@ def search_quadruplets(arr, target):
 arr = [4, 1, 2, -1, 1, -3]
 target=1
 print(search_quadruplets(arr, target))
+
+"""
+Time complexity: Sorting -> O(N*logN) and iteration will take O(N ^ 3). It is O(N * logN + N ^ 3) but asymptotically it will be O(N ^ 3)
+Space complexity: O(N ^ 3)
+
+"""
