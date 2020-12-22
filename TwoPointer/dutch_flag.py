@@ -4,7 +4,7 @@ def dutch_flag_sort(arr):
     low, high = 0, len(arr) - 1
     i = 0
 
-    while i<=high:
+    while i <= high:
         if arr[i] == 0:
             arr[i], arr[low] = arr[low], arr[i],
             # increment 'i' and 'low'
@@ -20,3 +20,9 @@ def dutch_flag_sort(arr):
 arr = [1, 0, 2, 1, 0]
 dutch_flag_sort(arr)
 print(arr)
+
+
+'''
+Time complexity: O(N)
+Space complexity: O(1)
+'''
