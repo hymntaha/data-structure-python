@@ -29,3 +29,8 @@ print("LinkedList has cycle: " + str(has_cycle(head)))
 
 head.next.next.next.next.next.next = head.next.next.next
 print("LinkedList has cycle: " + str(has_cycle(head)))
+
+"""
+Time complexity = O(N) where 'N' is the total number of nodes in LinkedList
+Space complexity = O(1)
+"""
