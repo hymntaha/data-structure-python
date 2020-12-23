@@ -30,3 +30,8 @@ def main():
 
 
 main()
+
+"""
+Time complexity: O(N) where 'N' is the number of nodes in the linked list.
+Space complexity: O(1) 
+"""
