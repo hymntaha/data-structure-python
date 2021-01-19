@@ -19,3 +19,13 @@ def main():
 
 
 main()
+
+
+"""
+The time complexity of the above algorithm is O(N * logN), where 'N' is the total
+number of appointments. Though we are iterating the intervals only once, our algorithm will take O(N * logN)
+since we need to sort them in the beginning.
+
+Space complexity: O(N) since we need for sorting...
+
+"""
