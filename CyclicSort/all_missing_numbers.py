@@ -20,4 +20,7 @@ def find_missing_numbers(nums):
 
 print(find_missing_numbers([2, 3, 1, 8, 2, 3, 5, 1]))
 
-# 1, 2, 3, x, 5, x, x, 8
+"""
+Time complexity: The time complexity of the above is O(N).
+Space complexity: O(1)
+"""
