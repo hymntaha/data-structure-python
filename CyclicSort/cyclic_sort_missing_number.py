@@ -16,3 +16,9 @@ def find_missing_number(nums):
 
 input = [4, 0, 3, 1]
 print(find_missing_number(input))
+
+
+"""
+Time complexity: O(N)
+Space complexity: O(1)
+"""
