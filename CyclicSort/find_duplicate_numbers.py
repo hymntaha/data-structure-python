@@ -13,7 +13,12 @@ def find_duplicate(nums):
 
     return nums
 
-
-
-
 print(find_duplicate([2, 1, 3, 3, 5, 4]))
+
+"""
+Time complexity #
+The time complexity of the above algorithm is O(n)O(n).
+
+Space complexity #
+The algorithm runs in constant space O(1)O(1) but modifies the input array.
+"""
