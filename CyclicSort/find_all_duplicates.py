@@ -15,3 +15,12 @@ def find_all_duplicates(nums):
     return duplicateNumbers
 
 print(find_all_duplicates([5, 4, 7, 2, 3, 5, 3]))
+
+
+"""
+Time complexity #
+The time complexity of the above algorithm is O(n)O(n).
+
+Space complexity #
+Ignoring the space required for storing the duplicates, the algorithm runs in constant space O(1)O(1).
+"""
