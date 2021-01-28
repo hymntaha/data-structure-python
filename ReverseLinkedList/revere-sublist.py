@@ -70,3 +70,8 @@ def main():
 
 
 main()
+
+"""
+Time complexity: Time complexity of our algorithm will be O(N) where 'N' is the total number of nodes in the LL
+Space complexity: O(1)
+"""
