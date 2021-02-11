@@ -14,14 +14,14 @@ class Node:
         print()
 
 
-def reverse_sub_list(head, p, q):
-    if p == q:
+def reverse_sub_list(head, start, end):
+    if start == end:
         return head
 
-    # after skipping 'p-1' nodes, current will point to 'p'th node
+    # after skipping 'start-1' nodes, current will point to 'start'th node
     current, previous = head, None
     i = 0
-    while current is not None and i < p - 1:
+    while current is not None and i < start - 1:
         previous = current
         current = current.next
         i += 1
@@ -35,9 +35,9 @@ def reverse_sub_list(head, p, q):
 
     i = 0
     # reverse nodes between 'p' and 'q'
-    while current is not None and i < q - p + 1:
+    while current is not None and i < end - start + 1:
         next = current.next
-        current.next = previous
+        current.next     = previous
         previous = current
         current = next
         i += 1
