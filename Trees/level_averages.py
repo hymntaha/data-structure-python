@@ -44,3 +44,8 @@ def main():
 
 
 main()
+
+"""
+Time complexity is O(N)
+Space complexity is O(N)
+"""
