@@ -49,5 +49,8 @@ main()
 """
 TIME COMPLEXITY: O(N^2), where N is the total number of nodes in the tree. This
 is due to the fact that we traverse each node once (which will take O(N)), and
-for every leaf node, we might have to store its path (by making a copy of
+for every leaf node, we might have to store its path (by making a copy of current path)
+which will take O(N).
+
+SPACE COMPLEXITY: O(N)
 """
