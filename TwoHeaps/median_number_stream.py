@@ -38,3 +38,9 @@ def main():
 
 
 main()
+
+"""
+Time complexity: Time complexity of the insertNum() will be O(logN) due to the insertion in the heap. The time complexity
+                 of the findMedian() will be O(1) as we can find the median from the top elements of the heaps
+Space complexity: It is O(N) because, as at any time, we will be storing all the numbers.
+"""
