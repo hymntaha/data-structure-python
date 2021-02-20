@@ -69,3 +69,15 @@ def main():
 
 
 main()
+
+"""
+Time complexity
+The time complexity of our algorithm is O(N*K)O(N∗K) where ‘N’ is the total number of elements in the input array and ‘K’ is the size of the sliding window. 
+This is due to the fact that we are going through all the ‘N’ numbers and, while doing so, we are doing two things:
+
+Inserting/removing numbers from heaps of size ‘K’. This will take O(logK)O(logK)
+Removing the element going out of the sliding window. This will take O(K)O(K) as we will be searching this element in an array of size ‘K’ (i.e., a heap).
+
+Space complexity
+Ignoring the space needed for the output array, the space complexity will be O(K)O(K) because, at any time, we will be storing all the numbers within the sliding window.
+"""
