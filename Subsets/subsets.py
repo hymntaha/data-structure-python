@@ -22,3 +22,12 @@ def main():
 
 
 main()
+
+"""
+TIME COMPLEXITY: Since, in each step, the number of subsets doubles as we add each element to all the existing subsets,
+therefore, we will have a total of O(2^N) subsets, where 'N' is the total number of elements in the input set.
+And since we construct a new subset from an existing set, therefore, the time complexity of the above algo will be O(N*2^N)
+
+SPACE COMPLEXITY: All the additional space used by our algorithm is for the output list. Since we will have a total of O(2^N)
+subsets, and each subset can take up to O(N) space, therefore, the space complexity of our algo is O(N*2^N)
+"""
