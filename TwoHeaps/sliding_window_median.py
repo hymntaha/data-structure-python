@@ -19,7 +19,7 @@ class SlidingWindowMedian:
                 # add the median to the result array
                 if len(self.maxHeap) == len(self.minHeap):
                     # we have even number of elements, take the average of middle two elements
-                    result[i - k + 1] = -self.maxHeap[0] / 2.0 +m self.minHeap[0] / 2.0
+                    result[i - k + 1] = -self.maxHeap[0] / 2.0 + self.minHeap[0] / 2.0
                 else: # because max-heap will have one more element than the min-heap
                     result[i - k + 1] = -self.maxHeap[0] / 1.0
 
