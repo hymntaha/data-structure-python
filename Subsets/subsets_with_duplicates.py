@@ -23,7 +23,17 @@ def find_subsets(nums):
 
 def main():
 
-    print("Here is the list of subsets: " + str(find_subsets([1, 5, 3, 3])))
+    print("Here is the list of subsets: " + str(find_subsets([1, 3, 3])))
 
 
 main()
+
+"""
+TIME COMPLEXITY: Since, in each step, the number of subsets doubles (if not duplicates) as we add each element to all
+the existing subsets, therefore, we will have a total of O(2^N) subsets, where 'N' is the total number of elements in
+the input set. And since we construct a new subset from an existing set, therefore, the time complexity of the above algorithm
+will be O(N*2^N)
+
+SPACE COMPLEXITY: All the additional space used by our algorithm is for the output list. Since, at most, we will have a total
+of O(2^N) subsets, and each subset can take up to O(N) space, therefore, the space complexity of our algorithm will be O(N * 2^N)
+"""
