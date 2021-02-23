@@ -18,7 +18,7 @@ def find_subsets(nums):
 def main():
 
     # print("Here is the list of subsets: " + str(find_subsets([1, 3])))
-    print("Here is the list of subsets: " + str(find_subsets([1, 5, 3])))
+    print("Here is the list of subsets: " + str(find_subsets([1, 3, 5])))
 
 
 main()
