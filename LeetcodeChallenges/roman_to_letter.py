@@ -8,21 +8,22 @@ values = {
     "M": 1000,
 }
 
-class Solution:
-    def romanToInt(self, s: str) -> int:
-        total = 0
-        i = 0
-        while i < len(s):
-            # If this is the substractive case.
-            if i + 1 < len(s) and values[s[i]] < values[s[i+1]]:
-                total += values[s[i+1]] - values[s[i]]
-                i += 2
-            # Else this is NOT the substractive case.
-            else:
-                total += values[s[i]]
-                i += 1
-        return total
 
+def romanToInt(s: str) -> int:
+    total = 0
+    i = 0
+    while i < len(s):
+        # If this is the substractive case.
+        if i + 1 < len(s) and values[s[i]] < values[s[i+1]]:
+            total += values[s[i+1]] - values[s[i]]
+            i += 2
+        # Else this is NOT the substractive case.
+        else:
+            total += values[s[i]]
+            i += 1
+    return total
+
+print(romanToInt('MMCMLXXXIX'))
 """
 Time complexity : O(1).
 As there is a finite set of roman numerals, the maximum number possible number can be 3999, which in roman numerals is MMMCMXCIX. As such the time complexity is O(1).
