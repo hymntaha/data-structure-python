@@ -26,5 +26,9 @@ def main():
 main()
 
 """
-TIME
+TIME COMPLEXITY: Since we can have 2^N permutations at the most and while processing each permutation we convert it into a 
+character array, the overall time complexity of the algorithm will be O(N*2^N)
+
+SPACE COMPLEXITY: All the additional space used by our algorithm is for the output list. Since we can have a total of O(2^N)
+permutations, the space complexity of our algo is O(N*2^N)
 """
