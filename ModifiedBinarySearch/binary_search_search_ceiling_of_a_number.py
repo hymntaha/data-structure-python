@@ -17,3 +17,11 @@ def search_ceiling_of_a_number(arr, key):
     return start
 
 print(search_ceiling_of_a_number([1, 3, 8, 10, 15], 12))
+
+"""
+TIME COMPLEXITY: Since we are reducing the search range by half at every step,
+this means that the time complexity of our algo will be O(logN) where 'N' is the 
+total elements in the given array.
+
+SPACE COMPLEXITY: The algorithm runs in constant space O(1).
+"""
