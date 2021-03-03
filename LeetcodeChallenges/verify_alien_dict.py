@@ -26,4 +26,4 @@ def isAlienSorted(words, order):
                 return False
     return True
 
-print(isAlienSorted(["hello","leetcode"],  order = "hlabcdefgijkmnopqrstuvwxyz"))
+print(isAlienSorted(["apple","app"],  order = "abcdefghijklmnopqrstuvwxyz"))
