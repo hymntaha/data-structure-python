@@ -11,6 +11,7 @@ def search_next_letter(letters,key):
         else: # key >= letters[mid]:
             start = mid + 1
 
+    # since the loop is running until 'start <= end', so at the end of the while loop, 'start == end+1'
     return letters[start % n]
 
 
