@@ -11,7 +11,7 @@ def search_next_letter(letters,key):
         else: # key >= letters[mid]:
             start = mid + 1
 
-    return[start % n]
+    return letters[start % n]
 
 
 print(search_next_letter(['a', 'c', 'f', 'h'], 'f'))
