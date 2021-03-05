@@ -18,3 +18,8 @@ def search_next_letter(letters,key):
 print(search_next_letter(['a', 'c', 'f', 'h'], 'f'))
 print(search_next_letter(['a', 'c', 'f', 'h'], 'b'))
 print(search_next_letter(['a', 'c', 'f', 'h'], 'm'))
+
+"""
+Time complexity: O(logN)
+Space complexity: O(1)
+"""
