@@ -1,5 +1,5 @@
 def computeExpression(input, memo={}):
-    if input.isdigit():
+    if input.isnumeric():
         return [int(input)]
     if input in memo:
         return memo[input]
@@ -15,12 +15,9 @@ def computeExpression(input, memo={}):
     memo[input] = res
     return res
 
-def mathOp(m,n,op):
-    if op == "+":
-        return m+n
-    elif op == "-":
-        return m-n
-    else:
-        return m*n
+def mathOp(a,b,operator):
+    if operator == "+": return a+b
+    elif operator == "-": return a-b
+    else: return a*b
 
 print(computeExpression("2*3-4*5"))
