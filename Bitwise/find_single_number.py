@@ -1,6 +1,9 @@
 def find_single_number(arr):
-    # TODO: Write your code here
-    return -1
+    num = 0
+    for i in arr:
+        num ^= i
+
+    return num
 
 
 arr = [1, 4, 2, 1, 3, 2, 3]
