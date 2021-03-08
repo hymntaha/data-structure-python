@@ -44,3 +44,11 @@ def main():
 
 
 main()
+
+"""
+TIME COMPLEXITY: There are two parts of the algorithm. In the first part, we keep increasing the bound's size 
+exponentially(double it every time) while searching for the proper bounds. Therefore, this step will take O(logN)
+assuming that the array will have max N numbers. In the second step, we perform the binary search which will take O(logN),
+so the overall time complexity of our algo will be O(logN + logN) which is asymptotically equivalent to O(logN)
+SPACE COMPLEXITY: O(1)
+"""
