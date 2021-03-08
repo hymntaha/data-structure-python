@@ -13,7 +13,25 @@ class ArrayReader:
 
 
 def search_in_infinite_array(reader, key):
-    # TODO: Write your code here
+    #find the proper bounds first
+    start, end = 0, 1
+    while reader.get(end) < key:
+        newStart = end + 1
+        end += (end-start + 1) * 2
+        # increase to double the bounds size
+        start = newStart
+
+    return binary_search(reader,key, start, end)
+
+def binary_search(reader, key, start,end):
+    while start <= end:
+        mid = start + (end-start)//2
+        if key < reader.get(mid):
+            end = mid - 1
+        elif key > reader.get(mid):
+            start = mid + 1
+        else: # found the key
+            return mid
     return -1
 
 def main():
