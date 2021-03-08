@@ -26,8 +26,8 @@ def binary_search(arr, key, findMaxIndex):
     return keyIndex
 def main():
     print(find_range([4, 6, 6, 6, 9], 6))
-    print(find_range([1, 3, 8, 10, 15], 10))
-    print(find_range([1, 3, 8, 10, 15], 12))
+    # print(find_range([1, 3, 8, 10, 15], 10))
+    # print(find_range([1, 3, 8, 10, 15], 12))
 
 
 main()

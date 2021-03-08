@@ -3,7 +3,6 @@ def computeExpression(input, memo={}):
         return [int(input)]
     if input in memo:
         return memo[input]
-    print(input)
     res = []
     for i in range(len(input)):
         if input[i] in "-+*":
@@ -20,4 +19,6 @@ def mathOp(a,b,operator):
     elif operator == "-": return a-b
     else: return a*b
 
-print(computeExpression("2*3-4*5"))
+print(computeExpression("3-2-2"))
+print(computeExpression("4*2-2"))
+print(computeExpression("3+2-2"))
