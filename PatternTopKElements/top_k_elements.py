@@ -22,3 +22,8 @@ def main():
           str(find_k_largest_numbers([5, 12, 11, -1, 12], 3)))
 
 main()
+
+"""
+TIME COMPLEXITY: The time complexity of this algo is  O(K * logK + (N-K) * logK) which is asymptotically equal to O(N*logK)
+SPACE COMPLEXITY: O(K)
+"""
