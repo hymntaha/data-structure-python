@@ -19,7 +19,7 @@ def find_k_largest_numbers(nums, k):
 def main():
 
     print("Here are the top K numbers: " +
-          str(find_k_largest_numbers([5, 12, 11, -1, 12], 3)))
+          str(find_k_largest_numbers([11,3,5,14,16], 3)))
 
 main()
 
