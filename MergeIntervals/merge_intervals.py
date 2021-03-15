@@ -34,7 +34,7 @@ def merge(intervals):
 
 def main():
     print("Merged intervals: ", end='')
-    for i in merge([Interval(1, 4), Interval(2, 5), Interval(7, 9)]):
+    for i in merge([Interval(1, 4), Interval(0, 4)]):
         i.print_interval()
     print()
 
