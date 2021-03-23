@@ -11,3 +11,10 @@ def find_boundary(arr):
             left = mid + 1
 
     return boundary_index
+
+print("Find boundary :", find_boundary([False, False, True, True, True]))
+print("Find boundary :", find_boundary([True]))
+print("Find boundary :", find_boundary([False, False, False]))
+print("Find boundary :", find_boundary([False, False, True, True, True]))
+print("Find boundary :", find_boundary([True, True, True, True, True]))
+print("Find boundary :", find_boundary([False, True]))
