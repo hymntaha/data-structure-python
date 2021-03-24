@@ -16,3 +16,5 @@ def find_first_occurrence(arr, target):
 arr = [1, 3, 3, 3, 3, 6, 10, 10, 10, 100]
 target = 3
 print(find_first_occurrence(arr,target))
+
+# Time complexity: O(logN)
