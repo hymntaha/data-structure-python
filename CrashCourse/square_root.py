@@ -17,3 +17,5 @@ def square_root(n):
 
 print(square_root(4))
 print(square_root(10))
+
+# Time complexity: O(logN)
