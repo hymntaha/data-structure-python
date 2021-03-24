@@ -14,3 +14,4 @@ arr = [1, 3, 3, 5, 8, 8, 10]
 target = 2
 print(first_not_smaller(arr,target))
 
+# Time complexity: O(logN)
