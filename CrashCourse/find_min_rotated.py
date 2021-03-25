@@ -5,6 +5,7 @@ def find_min_rotated(arr):
     while left <= right:
         mid = (left + right) // 2
         # if <= last element, then belongs to lower half
+        print(arr[-1])
         if arr[mid] <= arr[-1]:
             boundary_index = mid
             right = mid - 1
@@ -15,3 +16,5 @@ def find_min_rotated(arr):
     return boundary_index
 
 print(find_min_rotated([30,40,50,10,20]))
+
+# Time complexity: O(logN)
