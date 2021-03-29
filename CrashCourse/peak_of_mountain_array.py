@@ -11,3 +11,5 @@ def peak_of_mountain_array(arr):
             left = mid + 1
 
     return peak
+
+# Time complexity: O(logN)
