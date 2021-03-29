@@ -1,5 +1,12 @@
 def max_depth(root):
-    return
+    def dfs(root): # we dont actually need an inner function doing it here just keep consistent other solutions
+        # null node adds no depth
+        if not root:
+            return 0
+
+        # depth of current node's subtree = max depth of the two subtrees + 1 provioded by current node
+        return max(dfs(root.left), dfs(root.right)) + 1
+    return dfs(root)
 
 # Driver code
 class Node:
