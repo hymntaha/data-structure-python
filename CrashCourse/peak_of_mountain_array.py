@@ -12,4 +12,6 @@ def peak_of_mountain_array(arr):
 
     return peak
 
+# print("Find Peak of mountain :", peak_of_mountain_array([0, 1, 2, 3, 2, 1, 0]))
+print("Find Peak of mountain :", peak_of_mountain_array([0, 10, 3, 2, 1, 2]))
 # Time complexity: O(logN)
