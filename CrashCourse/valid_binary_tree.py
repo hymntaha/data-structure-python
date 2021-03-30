@@ -29,7 +29,7 @@ def build_tree(nodes):
 
 inputs = ["6 4 3 x x 5 x x 8 x x", "6 4 3 x x 8 x x 8 x x", "1 2 x x 3 x x", "x", "7 7 7 x x x 7 x 7 x x"]
 for i in range(len(inputs)):
-    root = build_tree(iter(inputs[ßi].split()))
+    root = build_tree(iter(inputs[i].split()))
     print("Valid binary search :", valid_bst(root))
 
 # Time complexity: O(N)
