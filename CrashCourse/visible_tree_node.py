@@ -29,7 +29,9 @@ def build_tree(nodes):
     cur.right = build_tree(nodes)
     return cur
 
-inputs = ["5 4 3 x x 8 x x 6 x x", "-100 x -500 x -50 x x", "9 8 11 x x 20 x x 6 x x"]
+inputs = ["9 8 11 x x 20 x x 6 x x"]
 for i in range(len(inputs)):
     root = build_tree(iter(inputs[i].split()))
     print("Visible tree node :",visible_tree_node(root))
+
+# Time complexity: O(N)
