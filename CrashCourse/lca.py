@@ -1,4 +1,26 @@
 def lca(root, node1, node2):
+    if not root:
+        return
+
+    # case 2 in above figure
+    if root == node1 or root == node2:
+        return root
+
+    left = lca(root.left, node1, node2)
+    right = lca(root.right, node1, node2)
+
+    # case 1
+    if left and right:
+        return root
+
+    # at this point, left and right can't be both non-null since we checked above
+    # case 4 and 5, report target node or LCA back to parent
+    if left:
+        return left
+    if right:
+        return right
+
+    # case 4, not found return null
     return None
 
 
