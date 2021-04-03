@@ -56,3 +56,5 @@ for i in range(len(inputs)):
         print("Lowest common ancester:",str(None))
     else:
         print("Lowest common ancester:",str(actual_output.val))
+
+# Time complexity: O(N)
