@@ -51,3 +51,5 @@ for i in range(len(inputs)):
     arr =[]
     get_tree(actual_output, arr)
     print("Serializing and deserializing :",' '.join(str(v) for v in arr))
+
+# Time complexity: O(N)
