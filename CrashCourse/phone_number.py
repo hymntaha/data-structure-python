@@ -29,3 +29,5 @@ KEYBOARD = {
 inputs = ["56", "23", "235"]
 for i in range(len(inputs)):
     print("Letter combinations of a phone number :",sorted(letter_combinations_of_phone_number(inputs[i])))
+
+# Time comp: O(2^N)
