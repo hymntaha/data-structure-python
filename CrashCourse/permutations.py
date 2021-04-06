@@ -23,3 +23,5 @@ def permutations(l):
 inputs = ["ab", "abc"]
 for i in range(len(inputs)):
     print("Permutations :",permutations(inputs[i]))
+
+# Time Comp: O(2^N)
