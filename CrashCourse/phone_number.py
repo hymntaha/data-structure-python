@@ -11,7 +11,6 @@ def letter_combinations_of_phone_number(digits):
             dfs(path, res)
             path.pop()
 
-
     res = []
     dfs([], res)
     return res
