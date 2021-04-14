@@ -10,3 +10,8 @@ def validPalindrome(s):
             break
 
     return s[l:r] == s[l:r][::-1] or s[l+1:r+1] == s[l+1:r+1][::-1]
+
+"""
+Space = O(1)
+Time = O(n)
+"""
