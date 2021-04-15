@@ -18,7 +18,6 @@ nums = [1]
 print(sumSubarrayK(nums,k))
 
 """
-1,2,3
--
-  -
+Time complexity: O(N)
+Space complexity: O(N)
 """
