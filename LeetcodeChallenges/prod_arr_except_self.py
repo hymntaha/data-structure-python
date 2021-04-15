@@ -14,6 +14,8 @@ def prod_except_self(nums):
 nums=[1,2,3,4]
 print(prod_except_self(nums))
 
+
+
 """
 Time complexity: O(N)
 Space complexity: O(1)
