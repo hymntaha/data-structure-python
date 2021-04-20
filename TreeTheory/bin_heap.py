@@ -25,3 +25,12 @@ class BinHeap:
                 self.heapList[mc] = tmp
 
             i = mc
+
+    def minChild(self,i):
+        if i * 2 > self.currentSize:
+            return i * 2
+        else:
+            if self.heapList[i*2]<self.heapList[i*2+1]:
+                return i*2
+            else:
+                return i*2+1
