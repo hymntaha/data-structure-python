@@ -10,3 +10,9 @@ class BinHeap:
                 self.heapList[i//2] = self.heapList[i]
                 self.heapList[i] = tmp
             i = i // 2
+
+    def insert(self,k):
+        self.heapList.append(k)
+        self.currentSize = self.currentSize + 1
+        self.percUp(self.currentSize)
+
