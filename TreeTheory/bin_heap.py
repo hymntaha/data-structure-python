@@ -16,3 +16,12 @@ class BinHeap:
         self.currentSize = self.currentSize + 1
         self.percUp(self.currentSize)
 
+    def percDown(self,i):
+        while(i*2) <= self.currentSize:
+            mc = self.minChild(i)
+            if self.heapList[i] > self.heapList[mc]:
+                tmp = self.heapList[i]
+                self.heapList[i] = self.heapList[mc]
+                self.heapList[mc] = tmp
+
+            i = mc
