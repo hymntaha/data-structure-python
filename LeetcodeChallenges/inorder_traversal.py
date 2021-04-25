@@ -10,3 +10,13 @@ def inorderTraversalIterative(root):
         res.append(node.val)
         root = node.right
     return res
+
+
+"""
+        10
+        / \
+       0  -10
+      / \   \
+     5   6   11
+
+"""
