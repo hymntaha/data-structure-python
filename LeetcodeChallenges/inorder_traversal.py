@@ -13,6 +13,8 @@ def inorderTraversalIterative(root):
 
 
 """
+Time complexity: O(N)
+Space complexity: O(h+n)
         10
         / \
        0  -10
