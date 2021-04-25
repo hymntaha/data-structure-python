@@ -18,3 +18,15 @@ def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
     if (not q or not p) or (p.val != q.val):
         return False
     return self.isSameTree(p.right, q.right) and self.isSameTree(p.left, q.left)
+
+# iterative DFS
+def isSameTree(p,q):
+    stack =[(p,q)]
+    while stack:
+        p,q = stack.pop()
+        if not p and not q:
+            continue
+        elif (not p or not q) or (p.val !=q.val):
+            return False
+        stack.extend([(q.right,p.right),(q.left,p.left)])
+    return True
