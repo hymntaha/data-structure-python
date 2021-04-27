@@ -29,3 +29,9 @@ def zigzagLevelOrder(self, root):
         children = []
 
     return result
+
+"""
+Time complexity: O(N)
+Space complexity: O(N)
+
+"""
