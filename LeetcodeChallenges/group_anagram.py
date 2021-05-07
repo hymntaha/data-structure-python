@@ -11,3 +11,6 @@ def groupAnagrams(strs):
 
 input = ["eat","tea","tan","ate","nat","bat"]
 print(groupAnagrams(input))
+
+
+"""Time complexity: O(n) Space complexity: O(n)"""
