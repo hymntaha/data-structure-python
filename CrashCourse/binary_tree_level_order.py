@@ -16,4 +16,11 @@ def level_order_traversal(root):
         res.append(new_level)
     return res
 
+# Driver code
+class Node:
+
+    def __init__(self,val,left=None,right=None):
+        self.val = val
+        self.left = left
+        self.right = right
 
