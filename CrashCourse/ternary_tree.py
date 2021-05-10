@@ -14,3 +14,9 @@ def ternary_tree_paths(root):
     res = []
     if root:dfs(root, [], res)
     return res
+
+class Node:
+    def __init__(self, val, children = []):
+        self.val = val
+        self.children = children
+
