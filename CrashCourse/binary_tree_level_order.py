@@ -24,3 +24,24 @@ class Node:
         self.left = left
         self.right = right
 
+
+def build_tree(nodes):
+    val = next(nodes)
+    if not val or val == 'x':
+        return
+    cur = Node(int(val))
+    cur.left = build_tree(nodes)
+    cur.right = build_tree(nodes)
+    return cur
+
+inputs = ['1 2 4 x 7 x x 5 x x 3 x 6 x x', '0 x x']
+for i in range(len(inputs)):
+    root = build_tree(iter(inputs[i].split()))
+    actual_output = []
+    node_output = level_order_traversal(root)
+    for level in node_output:
+        output = []
+        for x in level:
+            output.append(x.val)
+        actual_output.append(output)
+    print ('Level order traversal :', actual_output)
