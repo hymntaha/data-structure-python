@@ -30,3 +30,8 @@ gridMN = [
 ]
 
 print(maxAreaOfIsland(gridMN))
+
+"""
+Time complexity: O(R*C) where R is the number of rows in the given grid, and C is the number of columns. We vist very square once
+Space complexity: O(R*C), the space used by seen to keep track of visited squares, and the space used by stack.
+"""
