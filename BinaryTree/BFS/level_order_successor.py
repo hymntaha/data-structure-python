@@ -42,3 +42,10 @@ def main():
         print(result.val)
 
 main()
+
+""" 
+Time complexity: O(N) where N is the total number of nodes in the tree. This is due to the fact that we traverse each node once
+Space compleixty: O(N) which is required for the queue. Since we can have a max of N/2 nodes at any level
+
+"""
+
