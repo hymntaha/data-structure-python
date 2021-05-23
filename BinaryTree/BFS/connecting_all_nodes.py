@@ -17,8 +17,26 @@ class TreeNode:
 
 
 def connect_all_siblings(root):
-    # TODO: Write your code here
-    return
+    if root is None:
+        return
+
+    queue = deque()
+    queue.append(root)
+
+    currentNode, previousNode = None, None
+
+    while queue:
+        currentNode = queue.popleft()
+        if previousNode:
+            previousNode.next = currentNode
+        previousNode = currentNode
+
+    # insert the children of current node in the queue
+    if currentNode.left:
+        queue.append(currentNode.left)
+    if currentNode.right:
+        queue.append(currentNode.right)
+
 
 
 def main():
