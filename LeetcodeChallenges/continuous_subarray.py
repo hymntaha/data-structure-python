@@ -1,6 +1,6 @@
 def checkSubarraySum(nums,k):
     s=0
-    d={0:-1}
+    d={0:-1} # Initial sum is 0
     for i in range(len(nums)):
         s=s+nums[i]
         if k!=0:
