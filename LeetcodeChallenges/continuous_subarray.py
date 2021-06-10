@@ -12,6 +12,6 @@ def checkSubarraySum(nums,k):
             d[s]=i
     return False
 
-nums = [23,2,4,6,7]
+nums = [23,2,6,4,7]
 k = 6
 print(checkSubarraySum(nums,k))
