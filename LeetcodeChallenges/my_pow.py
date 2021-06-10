@@ -15,3 +15,9 @@ def myPow(x,n):
 x = 2.0000
 b = -3
 print(myPow(x,b))
+
+"""
+Time complexity: O(logn)
+Space complexity: O(1)
+"""
+
