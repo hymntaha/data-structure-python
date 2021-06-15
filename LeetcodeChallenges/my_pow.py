@@ -13,7 +13,7 @@ def myPow(x,n):
     return ans
 
 x = 2.0000
-b = -3
+b = 6
 print(myPow(x,b))
 
 """
