@@ -1,8 +1,11 @@
 def myPow(x,n):
+
     if n < 0:
         x = 1/x
         n = -n
+
     ans = 1
+
     while n :
         if n % 2:
             ans = x * ans

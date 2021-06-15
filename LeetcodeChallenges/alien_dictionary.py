@@ -4,18 +4,22 @@ def isAlienSorted(words, order):
         :type order: str
         :rtype: bool
         """
-        dic = {}
+        dict = {}
         new_words = []
-        for i, ch in enumerate(order):
-            dic[ch] = i
-        for w in words:
+
+        for i,c in enumerate(order):
+            dict[c] = i
+
+        for word in words:
             new = []
-            for c in w:
-                new.append(dic[c])
+            for c in word:
+                new.append(dict[c])
             new_words.append(new)
-        for w1, w2 in zip(new_words, new_words[1:]):
+
+        for w1,w2 in zip(new_words,new_words[1:]):
             if w1 > w2:
                 return False
+
         return True
 
 
