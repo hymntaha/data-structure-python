@@ -20,3 +20,9 @@ def move_zeros_to_left(A):
 nums=[1,10,20,0,59,63,0,88,0]
 move_zeros_to_left(nums)
 print(nums)
+
+
+"""
+Space Complexity O(1)
+Time Complexity O(N)
+"""
