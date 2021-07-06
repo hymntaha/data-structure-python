@@ -16,7 +16,7 @@ class Solution:
             res += dfs(node.right, maxVal)
             return res
 
-        dfs(root, root.val)
+        return dfs(root, root.val)
 root = TreeNode(9)
 root.right = TreeNode(3)
 root.left.left = TreeNode(3)
