@@ -29,14 +29,12 @@ class Solution:
                     stack.append((left, left.val))
 
         return cnt
-
-root = TreeNode(1)
-root.left = TreeNode(2)
+[9,null,3,6]
+root = TreeNode(9)
 root.right = TreeNode(3)
-root.left.left = TreeNode(4)
-root.left.right = TreeNode(5)
-root.right.left = TreeNode(6)
-root.right.right = TreeNode(7)
+root.left.left = TreeNode(3)
+root.right.left = TreeNode(1)
+root.right.right = TreeNode(5)
 
 solution = Solution()
 
