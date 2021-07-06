@@ -6,30 +6,17 @@ class TreeNode:
 
 class Solution:
     def goodNodes(self, root: 'TreeNode') -> 'TreeNode':
-        cnt = 1
-        stack = [(root, root.val)]
+        def dfs(node, maxVal):
+            if not node:
+                return 0
 
-        while len(stack) != 0:
-            cur, cur_max = stack.pop()
-            left = cur.left
-            right = cur.right
+            res = 1 if node.val >= maxVal else 0
+            maxVal = max(maxVal, node.val)
+            res += dfs(node.left, maxVal)
+            res += dfs(node.right, maxVal)
+            return res
 
-            if right:
-                if right.val < cur_max:
-                    stack.append((right, cur_max))
-                else:
-                    cnt += 1
-                    stack.append((right, right.val))
-
-            if left:
-                if left.val < cur_max:
-                    stack.append((left, cur_max))
-                else:
-                    cnt += 1
-                    stack.append((left, left.val))
-
-        return cnt
-[9,null,3,6]
+        dfs(root, root.val)
 root = TreeNode(9)
 root.right = TreeNode(3)
 root.left.left = TreeNode(3)
