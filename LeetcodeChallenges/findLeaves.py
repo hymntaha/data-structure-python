@@ -13,8 +13,11 @@ class Solution:
             if not node:
                 return 0
 
+            print('CURRENT NODE')
+            print(node.val)
             curr_level = max( prune_leaves(node.left),  prune_leaves(node.right))
-
+            print('CURRENT LEVEL')
+            print(curr_level)
             if curr_level == len(res):
                 res.append([])
             res[curr_level].append(node.val)
@@ -24,12 +27,12 @@ class Solution:
         prune_leaves(root)
         return res
 
-root = TreeNode(9)
+root = TreeNode(1)
+root.left = TreeNode(2)
 root.right = TreeNode(3)
-root.left.left = TreeNode(3)
-root.right.left = TreeNode(1)
-root.right.right = TreeNode(5)
+root.left.left = TreeNode(4)
+root.left.right = TreeNode(5)
 
 solution = Solution()
 
-print(solution.goodNodes(root))
+print(solution.findLeaves(root))
