@@ -13,3 +13,8 @@ def seen_before(arr):
 
 A = [2,3,3,3,3,5,5,6,6,6,7,11,11,11,11,13,16]
 print(seen_before(A))
+
+"""
+Time complexity: O(N)
+Space complexity: O(1)
+"""
