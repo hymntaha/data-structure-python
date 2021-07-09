@@ -6,7 +6,7 @@ def multiply(num1, num2):
 
     for i in reversed(range(len(num1))):
         for j in reversed(range(len(num2))):
-            result[i+j+1] += num1[i] + num2[j]
+            result[i+j+1] += num1[i] * num2[j]
             result[i+j] = result[i+j+1] // 10
             result[i+j+1] %= 10
 
@@ -15,6 +15,6 @@ def multiply(num1, num2):
 
     return [sign*result[0]] + result[1:]
 
-num1 = [5,3,4,7,2]
-num2 = [-7,6,3,1,6,7]
+num1 = [5,6,7]
+num2 = [8,9]
 print(multiply(num1,num2))
