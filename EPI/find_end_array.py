@@ -10,3 +10,8 @@ def can_reach_end(L):
 a = [3,2,0,0,2,0,1]
 
 print(can_reach_end(a))
+
+"""
+Time complexity: O(N)
+Space complexity: O(1)
+"""
