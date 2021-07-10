@@ -7,7 +7,7 @@ def getMaxContainer(water):
         minIndex = min(water[indexA], water[indexB])
         maxArea = max(maxArea, minIndex * (indexB - indexA))
 
-        if water[indexA] < water[indexB]:
+        if water[indexA] <= water[indexB]:
             indexA += 1
         else:
             indexB -= 1
