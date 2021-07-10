@@ -16,3 +16,8 @@ def getMaxContainer(water):
 
 arr = [4,8,1,9,3,11]
 print(getMaxContainer(arr))
+
+"""
+Time complexity: O(N)
+Space complexity: O(1)
+"""
