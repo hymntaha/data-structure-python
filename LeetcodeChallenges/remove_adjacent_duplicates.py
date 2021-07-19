@@ -10,3 +10,8 @@ def removeAdjacentDuplicates(str):
 
 s = "azxxzy"
 print(removeAdjacentDuplicates(s))
+
+"""
+Time complexity: O(N)
+Space complexity: O(N-D)
+"""
