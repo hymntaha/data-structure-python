@@ -10,4 +10,22 @@ def duplicateZeroes(arr):
                 arr[i + zeroes] = 0
 
 arr = [1,0,2,3,0,4,5,0]
-print(duplicateZeroes(arr))
+# print(duplicateZeroes(arr))
+
+def duplicateZeroesExtraSpace(arr):
+    newArray = []
+    countZeroes = 0
+
+    for i in range(len(arr) - 1):
+        newArray.append(arr[i])
+        if arr[i] == 0:
+            countZeroes += 1
+            newArray.append(arr[i])
+            newArray[i+1] = 0
+    for _ in range(countZeroes-1):
+        newArray.pop()
+
+    return newArray
+
+
+print(duplicateZeroesExtraSpace(arr))
