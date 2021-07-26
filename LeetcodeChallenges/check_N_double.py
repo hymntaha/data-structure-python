@@ -8,3 +8,18 @@ def checkIfExist(arr):
 
 nums = [-20,8,-6,-14,0,-19,14,4]
 print(checkIfExist(nums))
+
+def checkIfDoubleV2(arr):
+
+    double = {}
+    single = {}
+    for num in arr:
+        if num in double or num in single:
+            return True
+        else:
+            double[num*2]=num
+            single[num/2]=num
+
+    return False
+
+print(checkIfDoubleV2(nums))
