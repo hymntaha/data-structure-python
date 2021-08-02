@@ -1,4 +1,5 @@
 def majorityElem(nums):
+    # Boyer & Moore algo
     candidate, count = nums[0], 0
     for num in nums:
         if num == candidate:
@@ -12,3 +13,8 @@ def majorityElem(nums):
 
 arr = [2,2,1,1,1,2,2]
 print(majorityElem(arr))
+
+"""
+Time complexity: O(N)
+Space: O(1)
+"""
