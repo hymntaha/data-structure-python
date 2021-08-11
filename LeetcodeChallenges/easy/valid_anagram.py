@@ -17,7 +17,6 @@ def isAnagram(s,t):
         if i[1] != 0:
             return False
 
-
     return True
 
 
@@ -25,3 +24,7 @@ s = 'rat'
 t = 'car'
 
 print(isAnagram(s,t))
+"""
+Time complexity = O(N)
+Space complexity = O(N)
+"""
