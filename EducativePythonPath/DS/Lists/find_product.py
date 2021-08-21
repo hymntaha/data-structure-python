@@ -14,4 +14,4 @@ def find_product(lst):
     return product
 
 
-print(find_product([4,2,3,4,0]))
+print(find_product([1,2,3,4]))
