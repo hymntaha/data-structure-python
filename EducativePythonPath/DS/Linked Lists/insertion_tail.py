@@ -91,6 +91,20 @@ def delete(lst, value):
 
     return deleted
 
+def length(lst):
+    if lst.is_empty():
+        return 0
+
+    curr_node = lst.get_head()
+    cnt = 1
+
+    while curr_node.next_element:
+        cnt += 1
+        curr_node = curr_node.next_element
+
+    return cnt
+
+
 lst = LinkedList()
 lst.insert_at_head(1)
 lst.insert_at_head(4)
