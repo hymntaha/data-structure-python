@@ -46,3 +46,16 @@ def insert_at_tail(lst, value):
     # Set the nextElement of the previous node to new node
     temp.next_element = new_node
     return
+
+def search(lst, value):
+
+    # Start from first element
+    current_node = lst.get_head()
+
+    # Traverse the list till you reach end
+    while current_node:
+        if current_node.data == value:
+            return True  # value found
+        current_node = current_node.next_element
+
+    return False  # value not found
