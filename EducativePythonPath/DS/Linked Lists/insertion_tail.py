@@ -104,6 +104,17 @@ def length(lst):
 
     return cnt
 
+def detect_loop(lst):
+    # Keep two iterators
+    onestep = lst.get_head()
+    twostep = lst.get_head()
+
+    while onestep and twostep and twostep.next_element:
+        onestep = onestep.next_element # moves one node at a time
+        twostep = twostep.next_element.next_element # skips a node
+        if onestep == twostep: # loop exists
+            return True
+    return False
 
 lst = LinkedList()
 lst.insert_at_head(1)
