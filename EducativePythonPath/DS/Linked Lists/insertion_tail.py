@@ -116,6 +116,26 @@ def detect_loop(lst):
             return True
     return False
 
+def find_mid(lst):
+    length = lst.length()
+
+    mid = 0
+    if length % 2 == 0:
+        mid = length // 2
+    else :
+        mid = (length // 2) + 1
+
+    curr = lst.get_head()
+    count = 1
+    middle_node = 0
+
+    while curr:
+        if count == mid:
+            middle_node = curr.data
+        curr = curr.next_element
+
+    return middle_node
+
 lst = LinkedList()
 lst.insert_at_head(1)
 lst.insert_at_head(4)
