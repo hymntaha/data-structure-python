@@ -117,6 +117,9 @@ def detect_loop(lst):
     return False
 
 def find_mid(lst):
+    if lst.is_empty():
+        return -1
+
     length = lst.length()
 
     mid = 0
