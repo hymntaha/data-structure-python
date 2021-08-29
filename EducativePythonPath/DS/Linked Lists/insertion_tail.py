@@ -165,6 +165,51 @@ def remove_duplicates(lst):
         outer_node = outer_node.next_element
 
     return lst
+def union(list1, list2):
+    curr_node = list1.get_head()
+    last_node = curr_node
+
+    while curr_node.next_element:
+        curr_node = curr_node.next_element
+        last_node = curr_node
+
+    lst_2_node = list2.get_head()
+
+    last_node.next_element = lst_2_node
+
+    while lst_2_node.next_element:
+        last_node = lst_2_node
+        lst_2_node = lst_2_node.next_element
+
+    return list1
+
+# Returns a list containing the intersection of list1 and list2
+
+
+def intersection(list1, list2):
+
+    result = LinkedList()
+    visited_nodes = set()  # Keep track of all the visited nodes
+    current_node = list1.get_head()
+
+    # Traversing list1 and adding all unique nodes into the hash set
+    while current_node:
+        value = current_node.data
+        if value not in visited_nodes:
+            visited_nodes.add(value)  # Visiting current_node for first time
+        current_node = current_node.next_element
+
+    start = list2.get_head()
+
+    # Traversing list 2
+    # Nodes which are already present in visited_nodes are added to result
+    while start:
+        value = start.data
+        if value in visited_nodes:
+            result.insert_at_head(start.data)
+        start = start.next_element
+    result.remove_duplicates()
+    return result
 
 lst = LinkedList()
 lst.insert_at_head(1)
