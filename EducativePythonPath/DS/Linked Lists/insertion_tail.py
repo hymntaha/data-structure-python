@@ -211,6 +211,23 @@ def intersection(list1, list2):
     result.remove_duplicates()
     return result
 
+def find_nth(lst, n):
+    curr_node=lst.get_head()
+    count = 0
+
+    length = lst.length() -  n
+
+    if length < 1:
+        return -1
+
+    while curr_node.next_element:
+        if count == length:
+            return curr_node
+
+        count += 1
+        curr_node = curr_node.next_element
+
+
 lst = LinkedList()
 lst.insert_at_head(1)
 lst.insert_at_head(4)
