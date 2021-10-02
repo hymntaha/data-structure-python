@@ -91,6 +91,19 @@ class newQueue:
             while not self.tmp_stack.is_empty():
                 self.main_stack.push(self.tmp_stack.pop())
 
+    def dequeue(self):
+        if self.main_stack.is_empty():
+            return None
+        value = self.main_stack.pop()
+        print(str(value) + 'main dequeued')
+        return value
 
+if __name__ == "__main__":
+    queue = newQueue()
+    for i in range(5):
+        queue.enqueue(i+1)
+    print('-------------')
+    for i in range(5):
+        queue.dequeue()
 
 
