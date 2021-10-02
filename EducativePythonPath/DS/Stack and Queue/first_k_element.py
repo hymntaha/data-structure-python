@@ -98,6 +98,20 @@ class newQueue:
         print(str(value) + 'main dequeued')
         return value
 
+def evaluate_post_fix(exp):
+    stack = MyStack()
+    for char in exp:
+        if char.isdigit():
+            stack.push(char)
+        else:
+            left = stack.pop()
+            right = stack.pop()
+            stack.push(str(eval(right+char+left)))
+
+    return int(float(stack.pop()))
+
+print(evaluate_post_fix("921*-8-4+"))
+
 if __name__ == "__main__":
     queue = newQueue()
     for i in range(5):
