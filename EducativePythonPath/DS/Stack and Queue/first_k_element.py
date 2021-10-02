@@ -71,3 +71,26 @@ def reverseK(queue, k):
     for i in range(size-k):
         queue.enqueue(queue.dequeue())
     return queue
+
+
+class newQueue:
+    def __init__(self):
+        self.main_stack = MyStack()
+        self.tmp_stack = MyStack()
+
+    def enqueue(self,value):
+        if self.main_stack.is_empty() and self.tmp_stack.is_empty():
+            self.main_stack.push(value)
+            print(str(value) + 'Init main enqueued')
+        else:
+            while not self.main_stack.is_empty():
+                self.tmp_stack.push(self.main_stack.pop())
+
+            self.main_stack.push(value)
+            print(str(value) + "temp enqueued")
+            while not self.tmp_stack.is_empty():
+                self.main_stack.push(self.tmp_stack.pop())
+
+
+
+
