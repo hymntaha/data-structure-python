@@ -112,6 +112,20 @@ def evaluate_post_fix(exp):
 
 print(evaluate_post_fix("921*-8-4+"))
 
+def next_greater_element(lst):
+    stack = MyStack()
+    res = [-1]*len(lst)
+
+    for i in range(len(lst) - 1, -1, -1):
+        if not stack.is_empty():
+            while not stack.is_empty() and stack.peek() <= lst[i]
+                stack.pop()
+        if not stack.is_empt():
+            res[i] = stack.peek()
+        stack.push(lst[i])
+
+    return res
+
 if __name__ == "__main__":
     queue = newQueue()
     for i in range(5):
