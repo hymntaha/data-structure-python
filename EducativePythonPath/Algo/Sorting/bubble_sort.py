@@ -9,3 +9,5 @@ def bubble_sort(lst):
     return lst
 
 print(bubble_sort([3,2,1,5,4]))
+
+# Time complexity: O(N^2)
