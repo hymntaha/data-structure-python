@@ -14,3 +14,7 @@ boxTypes = [[5,10],[2,5],[4,7],[3,9]]
 truckSize = 10
 print(maximumUnits(boxTypes, truckSize))
 
+'''
+Time complexity = O(nlogn)
+Space complexity = O(n)
+'''
