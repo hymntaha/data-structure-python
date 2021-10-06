@@ -37,3 +37,4 @@ def merge_sort(lst):
 
 
 print(merge_sort([3,2,1,5,4]))
+# Time complexity O(nlogn)
