@@ -11,3 +11,6 @@ def selection_sort(lst):
     return lst
 
 print(selection_sort([3,2,1,5,4]))
+
+
+# Time complexity is O(n^2)
