@@ -12,3 +12,7 @@ lst = [3,2,4]
 tar = 6
 print(twoSum(lst,tar))
 
+'''
+Time complexity: O(N)
+Space complexity: O(N)
+'''
