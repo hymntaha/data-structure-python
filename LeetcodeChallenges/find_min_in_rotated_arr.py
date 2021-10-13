@@ -15,5 +15,5 @@ def findMin(nums):
     return res
 
 
-lst = [11,13,14,15]
+lst = [2,1]
 print(findMin(lst))
