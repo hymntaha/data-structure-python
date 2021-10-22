@@ -12,10 +12,9 @@ def lengthSubstring(str):
         max_length = max(max_length, window_end-window_start+1)
 
     return max_length
-
-
-
-
-
+'''
+Time complexity: O(N)
+Space complexity: O(K) -> K = the number of distinct chars in the input str
+'''
 
 print(lengthSubstring("aabccbb"))
