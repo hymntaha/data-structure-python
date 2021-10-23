@@ -2,18 +2,15 @@
 import sys
 
 def get_fibonacci_last_digit_naive(n):
-    if n <= 1:
-        return n
+    if n < 2: return n
+    else:
+        a, b = 0, 1
+        for i in range(1,n):
+            a, b = b, (a+b) % 10
 
-    previous = 0
-    current  = 1
-
-    for _ in range(n - 1):
-        previous, current = current, previous + current
-    print(current)
-    return current % 10
+    return b
 
 if __name__ == '__main__':
     # input = sys.stdin.read()
     # n = int(input)
-    print(get_fibonacci_last_digit_naive(331))
+    print(get_fibonacci_last_digit_naive(10))

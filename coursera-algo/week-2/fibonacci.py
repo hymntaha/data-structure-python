@@ -13,7 +13,7 @@ def calc_fib(n):
 
     return current
 
-# n = int(input())
-print(calc_fib(10))
+n = int(input())
+print(calc_fib(n))
 
 # 1 1 2 3 5
