@@ -16,3 +16,7 @@ def threeSum(nums):
     return [list(i) for i in res]
 
 print(threeSum([-3, 0, 1, 2, -1, 1, -2]))
+'''
+Time complexity: O(N * logN + N^2) => asymptotically O(N^2)
+Space complexity: O(N)
+'''
