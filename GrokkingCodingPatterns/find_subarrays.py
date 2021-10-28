@@ -22,3 +22,11 @@ def find_subarray(arr,target):
 nums = [2, 5, 3, 10]
 target=32
 print(find_subarray(nums,target))
+'''
+Time complexity: The main for loop managing the sliding window takes O(N)
+but creating subarrays can take up to O(N^2) so overall algo will take
+O(N^3)
+
+Space complexity: O(N^ 3)
+
+'''
