@@ -9,12 +9,12 @@ def find_happy_number(num):
 
 
 def find_square_sum(num):
-    _sum = 0
+    total = 0
     while (num > 0):
         digit = num % 10
-        _sum += digit * digit
+        total += digit * digit
         num //= 10
-    return _sum
+    return total
 
 
 print(find_happy_number(23))
