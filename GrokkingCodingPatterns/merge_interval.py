@@ -1,5 +1,6 @@
 from __future__ import print_function
 
+
 class Interval:
     def __init__(self, start, end):
         self.start = start
@@ -8,26 +9,28 @@ class Interval:
     def print_interval(self):
         print("[" + str(self.start) + ", " + str(self.end) + "]", end='')
 
+
 def merge(intervals):
     if len(intervals) < 2:
         return intervals
 
-    intervals.sort(key=lambda x:x.start)
+    # sort the intervals on the start time
+    intervals.sort(key=lambda x: x.start)
 
     mergedIntervals = []
     start = intervals[0].start
     end = intervals[0].end
-
     for i in range(1, len(intervals)):
         interval = intervals[i]
-        if intervals.start <= end:
+        if interval.start <= end:  # overlapping intervals, adjust the 'end'
             end = max(interval.end, end)
-        else:
-            mergedIntervals.append(Interval(start,end))
+        else:  # non-overlapping interval, add the previous internval and reset
+            mergedIntervals.append(Interval(start, end))
             start = interval.start
             end = interval.end
 
-    mergedIntervals.append(Interval(start,end))
+    # add the last interval
+    mergedIntervals.append(Interval(start, end))
     return mergedIntervals
 
 
@@ -46,5 +49,6 @@ def main():
     for i in merge([Interval(1, 4), Interval(2, 6), Interval(3, 5)]):
         i.print_interval()
     print()
+
 
 main()
