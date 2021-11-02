@@ -23,7 +23,10 @@ def insert(intervals, new_interval):
 
     return merged
 
-
+'''
+Time complexity: O(N)
+Space complexity: O(N)
+'''
 
 def main():
     # print("Intervals after inserting the new interval: " + str(insert([[1, 3], [5, 7], [8, 12]], [4, 6])))
