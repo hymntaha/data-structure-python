@@ -35,20 +35,26 @@ def merge(intervals):
 
 
 def main():
-    print("Merged intervals: ", end='')
-    for i in merge([Interval(1, 4), Interval(2, 5), Interval(7, 9)]):
-        i.print_interval()
-    print()
+    # print("Merged intervals: ", end='')
+    # for i in merge([Interval(1, 4), Interval(2, 5), Interval(7, 9)]):
+    #     i.print_interval()
+    # print()
 
     print("Merged intervals: ", end='')
     for i in merge([Interval(6, 7), Interval(2, 4), Interval(5, 9)]):
         i.print_interval()
     print()
-
-    print("Merged intervals: ", end='')
-    for i in merge([Interval(1, 4), Interval(2, 6), Interval(3, 5)]):
-        i.print_interval()
-    print()
+    #
+    # print("Merged intervals: ", end='')
+    # for i in merge([Interval(1, 4), Interval(2, 6), Interval(3, 5)]):
+    #     i.print_interval()
+    # print()
 
 
 main()
+'''
+Time complexity: O(N * logN), where 'N' is the total number of intervals. We are iterating the intervals only once
+which will take O(N), in the beginning though, since we need to sort the intervals, our algo will be O(N*logN)
+
+Space complexity: O(N) in osrting
+'''
