@@ -16,7 +16,10 @@ def merge(intervals_a, intervals_b):
             j+= 1
     return result
 
-
+"""
+Time complexity: O(N+M)
+Space complexity: O(1) -> Ignoring the space for the result list, the algo runs in constant space
+"""
 def main():
     print("Intervals Intersection: " + str(merge([[1, 3], [5, 6], [7, 9]], [[2, 3], [5, 7]])))
     # print("Intervals Intersection: " + str(merge([[1, 3], [5, 7], [9, 12]], [[5, 10]])))
