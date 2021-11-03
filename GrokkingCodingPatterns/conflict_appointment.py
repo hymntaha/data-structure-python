@@ -16,6 +16,10 @@ def can_attend_all_appointments(intervals):
         return True
     return False
 
+"""
+Time complexity: O(N*logN)
+Space complexity: O(N) => Timsort needs O(N)
+"""
 
 def main():
     print("Can attend all appointments: " + str(can_attend_all_appointments([[1, 4], [2, 5], [7, 9]])))
