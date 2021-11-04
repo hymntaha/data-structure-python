@@ -31,7 +31,10 @@ def traverse(root):
         result.append(currentLevel)
     return result
 
-
+'''
+Time complexity: O(N)
+Space complexity: O(N)
+'''
 def main():
     root = TreeNode(12)
     root.left = TreeNode(7)
