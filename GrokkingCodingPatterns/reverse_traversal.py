@@ -29,7 +29,10 @@ def traverse(root):
     return result
 
 # [[9,10,5],[7,1],[12]]
-
+'''
+Time complexity: O(N)
+Space complexity: O(N)
+'''
 def main():
     root = TreeNode(12)
     root.left = TreeNode(7)
