@@ -7,8 +7,28 @@ class TreeNode:
 
 def traverse(root):
     result = deque()
-    # TODO: Write your code here
+
+    queue = deque()
+    queue.appendleft(root)
+
+    while queue:
+        currentLevel = []
+        currentSize = len(queue)
+
+        for _ in range(currentSize):
+            currentNode = queue.popleft()
+            print(currentNode.val)
+            currentLevel.append(currentNode.val)
+
+            if currentNode.left:
+                queue.append(currentNode.left)
+            if currentNode.right:
+                queue.append(currentNode.right)
+
+        result.appendleft(currentLevel)
     return result
+
+# [[9,10,5],[7,1],[12]]
 
 def main():
     root = TreeNode(12)
