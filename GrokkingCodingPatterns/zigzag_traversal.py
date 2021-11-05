@@ -34,7 +34,10 @@ def traverse(root):
         result.append(currentLevel)
 
     return result
-
+'''
+Time complexity: O(N)
+Space complexity: O(N)
+'''
 # [[12],[1,7],[9,10,5][17,20]]
 def main():
     root = TreeNode(12)
