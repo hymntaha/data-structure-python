@@ -28,7 +28,10 @@ def find_minimum_depth(root):
                 queue.append(currentNode.left)
             if currentNode.right:
                 queue.append(currentNode.right)
-
+'''
+Time complexity: O(N)
+Space complexity: O(N)
+'''
 def main():
     root = TreeNode(12)
     root.left = TreeNode(7)
