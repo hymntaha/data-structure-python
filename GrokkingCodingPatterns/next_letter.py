@@ -17,9 +17,9 @@ def search_next_letter(letters, key):
 
 
 def main():
-    print(search_next_letter(['a', 'c', 'f', 'h'], 'f'))
+    # print(search_next_letter(['a', 'c', 'f', 'h'], 'f'))
     print(search_next_letter(['a', 'c', 'f', 'h'], 'b'))
-    print(search_next_letter(['a', 'c', 'f', 'h'], 'm'))
+    # print(search_next_letter(['a', 'c', 'f', 'h'], 'm'))
 
 
 main()
