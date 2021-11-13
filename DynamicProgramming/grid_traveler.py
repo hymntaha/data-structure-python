@@ -12,3 +12,4 @@ def gridTraveler(m,n, memo={}):
 print(gridTraveler(2,3))
 print(gridTraveler(4,3))
 print(gridTraveler(18,18))
+

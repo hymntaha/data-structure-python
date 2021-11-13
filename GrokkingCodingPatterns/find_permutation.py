@@ -1,6 +1,5 @@
 from collections import deque
 
-
 def find_permutations(nums):
     numsLength = len(nums)
     result = []
@@ -14,6 +13,7 @@ def find_permutations(nums):
             # create a new permutation by adding the current number at every position
             for j in range(len(oldPermutation)+1):
                 newPermutation = list(oldPermutation)
+                print(newPermutation)
                 newPermutation.insert(j, currentNumber)
                 if len(newPermutation) == numsLength:
                     result.append(newPermutation)
