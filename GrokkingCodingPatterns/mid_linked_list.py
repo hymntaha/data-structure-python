@@ -5,6 +5,15 @@
 #         self.next = next
 class Solution:
     def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        # Best solution
+        p = head
+        pf = head
+        while pf and pf.next:
+            pf = pf.next.next
+            p = p.next
+
+        return p
+        '''
         curr = head
 
         if curr is None:
@@ -32,3 +41,4 @@ class Solution:
             count -= 1
             if count == mid:
                 return currTwo
+        '''
