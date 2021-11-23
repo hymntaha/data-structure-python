@@ -17,4 +17,4 @@ Time complexity: O(N)
 Space complexity: O(K) -> K = the number of distinct chars in the input str
 '''
 
-print(lengthSubstring("aabccbb"))
+print(lengthSubstring("abcabcbb"))
