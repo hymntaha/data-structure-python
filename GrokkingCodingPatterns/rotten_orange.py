@@ -32,7 +32,10 @@ def rottenOrange(grid):
         time += 1
     return time if fresh == 0 else -1
 
-
+"""
+Time complexity: O(n.m)
+Space complexity: O(n.m)
+"""
 
 mat = [[2,1,1],[1,1,0],[0,1,1]]
 print(rottenOrange(mat))
