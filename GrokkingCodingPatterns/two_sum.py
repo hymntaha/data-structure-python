@@ -20,3 +20,12 @@ def two_sum(arr,tar):
 array = [1, 2, 3, 4, 6]
 target=6
 print(two_sum(array,target))
+
+'''Bipartite Graph
+Topological sort
+Kahn’s algo
+Dijkstra’s Algo
+Prim’s Algo
+Kruskal’s Algo
+Kosaraju Algo
+Bellman ford algo'''
