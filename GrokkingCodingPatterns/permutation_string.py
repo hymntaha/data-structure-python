@@ -13,7 +13,7 @@ def permutiation_string(s1, s2):
 
 
 
-print('Permutation exist: ' + str(permutiation_string("abc","oidbcaf")))
-print('Permutation exist: ' + str(permutiation_string("dc", "odicf")))
-print('Permutation exist: ' + str(permutiation_string("bcdyabcdx","bcdxabcdy")))
-print('Permutation exist: ' + str(permutiation_string("abc", "aaacb")))
+# print('Permutation exist: ' + str(permutiation_string("abc","oidbcaf")))
+print('Permutation exist: ' + str(permutiation_string("dc", "oiaxxxdcf")))
+# print('Permutation exist: ' + str(permutiation_string("bcdyabcdx","bcdxabcdy")))
+# print('Permutation exist: ' + str(permutiation_string("abc", "aaacb")))
