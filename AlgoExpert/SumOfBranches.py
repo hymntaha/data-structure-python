@@ -4,6 +4,10 @@ class BinaryTree:
         self.left = None
         self.right = None
 
+'''
+Time: O(n)
+Space: O(n)
+'''
 def branchSum(root):
     sums = []
     calculateBranchSum(root, 0, sums)
