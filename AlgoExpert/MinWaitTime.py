@@ -9,6 +9,9 @@ def minWait(queries):
 
     return total
 
-
+'''
+Time: O(nlogn)
+Space: O(n)
+'''
 arr= [3,1,2,2,6]
 print(minWait(arr))
