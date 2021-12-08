@@ -4,12 +4,20 @@ class BinaryTree:
         self.left = None
         self.right = None
 
+'''
+Time: O(n)
+Space: O(h) -> height of the tree
+'''
 def branchDepthRecursive(root, depth = 0):
     if root is None:
         return 0
 
     return depth + branchDepthRecursive(root.left, depth + 1) + branchDepthRecursive(root.right, depth+1)
 
+'''
+Time: O(n)
+Space: O(n)
+'''
 def branchDepthIterative(root):
     sumOfDepth = 0
     stack = [{"node": root, "depth": 0}]
