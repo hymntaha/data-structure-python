@@ -12,3 +12,8 @@ def insertion_sort(array):
 
 
 print(insertion_sort([3,5,1,6,9,2,11,7,8]))
+'''
+Best: Time => O(n) | Space => O(1)
+Average: Time => O(n^2) | Space => O(1)
+Worse: Time => O(n^2) | Space => O(1)
+'''
