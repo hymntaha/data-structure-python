@@ -11,5 +11,9 @@ def selection_sort(array):
             array[min_value], array[i] = array[i], array[min_value]
 
     return array
-
+'''
+Best: Time => O(n) | Space => O(1)
+Average: Time => O(n^2) | Space => O(1)
+Worse: Time => O(n^2) | Space => O(1)
+'''
 print(selection_sort([4,5,10,1,6,9,8,3,2]))
