@@ -9,7 +9,10 @@ def caesarCipherEncryptor(string, key):
 def getNewLetter(letter,key,alphabet):
     newLetterCode = alphabet.index(letter) + key
     return alphabet[newLetterCode % 26]
-
+'''
+Time complexity: O(n)
+Space complexity: O(n)
+'''
 key = 7
 string = "mvklahvjcnbwqvtutmfafkwiuagjkzmzwgf" # Expected: tcrshocqjuidxcabatmhmrdpbhnqrgtgdnm
 print(caesarCipherEncryptor(string,key))
