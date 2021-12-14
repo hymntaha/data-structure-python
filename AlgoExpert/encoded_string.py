@@ -19,3 +19,8 @@ def runLengthEncoding(string):
 
 string = "AAAAAAAAAAAAABBCCCCDD"
 print(runLengthEncoding(string))
+
+'''
+Time complexity: O(N)
+Space complexity: O(N)
+'''
