@@ -21,6 +21,9 @@ def binarySearch(nums, target, leftBias):
 
     return i
 
-
+'''
+Time Complexity: O(logN)
+Space Complexity: O(1)
+'''
 
 print(searchRange([5,7,8,8,8,8],8))
