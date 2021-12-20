@@ -24,6 +24,9 @@ def threeNumberSum(arr, target):
     return res
 
 
-
+'''
+Time Complexity: O(N^2)
+Space Complexity: O(N)
+'''
 
 print(threeNumberSum([12,3,1,2,-6,5,-8,6], 0))
