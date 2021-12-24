@@ -15,6 +15,9 @@ def smallestDifference(arrayOne, arrayTwo):
                 second_elem = arrayTwo[j]
     return [first_elem, second_elem]
 
-
+'''
+Time complexity: O(N^2)
+Space complexity: O(1)
+'''
 array1 = [-1, 5, 10, 20, 28, 3]
 array2 = [26, 134, 135, 15, 17]
